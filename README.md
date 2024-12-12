@@ -32,11 +32,11 @@ VALUES
 
 PostMan
 
---- to create the quiz according to category --- POST ---  http://localhost:8080/quiz/create?category=java&numQ=3&title=JQuiz
---- to get the quiz which we have created --- GET ----  http://localhost:8080/quiz/get/2
+--- to create the quiz according to category --- POST ---  http://localhost:8080/quiz/create?category=java&numQ=3&title=JQuiz  ----here we can change the category, numQ and title
+--- to get the quiz which we have created --- GET ----  http://localhost:8080/quiz/get/2   ----- here we can change the id
 --- to submit the answers of the above quiz
 (to get the corrct answers ---open pgadmin and then fire query in the tool box ---- select id, right_answer from question where id=2 or id=10 or id=17 (here take id according to the quiz) then we'll get the correct answers.
- type --   to submit the quiz--- POST --- http://localhost:8080/quiz/submit/1    then in body then raw format is JSON type---
+ type --   to submit the quiz--- POST --- http://localhost:8080/quiz/submit/1  --- here we can get id and submit id should be same....  then in body then raw format is JSON type---
 
 [
     {
